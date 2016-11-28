@@ -172,9 +172,45 @@ void graph::rDFSUtil(int v, vector<int>& visit, vector<int>& parent){
 void graph::rDFS(int v){
     vector<int> visit(V,0);
     if(v==-1)
-        for(int i=0;i<V;++i)
-            if(!visit[i])
-                rDFSUtil(i,visit);
-    else
-        rDFSUtil(v,visit);
+        for(int i=0;i<V;++i);
+            //if(!visit[i])
+            //    rDFSUtil(i,visit);
+   // else
+       // rDFSUtil(v,visit);
+}
+bool graph::isBipartite_B(){
+    vector<int> color(V,-1);
+    queue<int> q; q.push(0); color[0]=0; int cur = 1;
+    while(!q.empty()){
+        int x=q.front();q.pop();
+        cur = !color[x];
+        int n = adj[x].size();
+        for(int i=0;i<n;++i){
+            int child = adj[x][i];
+            int col = color[child];
+            if(col==-1){
+                color[child] = cur;
+                q.push(child);
+            }
+            else if(col==!cur)
+                return false;
+        }
+        cur = !cur;
+    }
+    return true;
+}
+bool graph::isBipartite_DUtil(int v,vector<int>& color, int cur){
+    color[v] = cur; bool out = true;
+    for(int i=0;i<adj[v].size();++i){
+        int child = adj[v][i];
+        if(color[child]==cur)
+            return false;
+        if(color[child]==-1)
+            out = isBipartite_DUtil(child,color,!cur);
+    }
+    return out;
+}
+bool graph::isBipartite_D(){
+    vector<int> color(V,-1);
+    return isBipartite_DUtil(0,color,1);
 }

@@ -23,8 +23,11 @@ class graph
         int cyclesUDG();
         int cyclesUDGUtil(int,vector<int>&);
         int islandsUDG();
-        void rDFSUtil(int,vector<int>&);
+        void rDFSUtil(int,vector<int>&, vector<int>&);
         void rDFS(int=-1);
+        bool isBipartite_B();         // G is connected
+        bool isBipartite_D();
+        bool isBipartite_DUtil(int,vector<int>&,int);
 };
 
 #endif // GRAPH_H
