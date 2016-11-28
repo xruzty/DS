@@ -45,22 +45,27 @@ int main()
         microseconds = std::chrono::duration_cast<std::chrono::microseconds>(finish-start);
         std::cout << int(microseconds.count())/1000 << "ms\n";
 */
-    graph G(8,1);
-    G.addEdge(1,2);
+    graph G(5,1);
+    G.addEdge(0,4);
+    G.addEdge(4,2);
     G.addEdge(2,3);
-    G.addEdge(3,4);
-    G.addEdge(4,5);
-    G.addEdge(1,5);
-    G.addEdge(5,6);
-    G.addEdge(6,7);
-    G.addEdge(7,5);
+    G.addEdge(3,1);
+    G.addEdge(1,4);
+    G.addEdge(1,2);
+
+
+    //G.addEdge(0,3);
     //G.addEdge(0,1);
  //   if(G.cyclesDG())
  //       cout<<"yes";
  //   else
  //       cout<<"noo";
-    G.dfs();
-    cout<<endl;
-    G.rDFS();
+    //G.dfs();
+    string s = "Bipartite";
+    if(G.isBipartite_D())
+        cout<<"is "+s;
+    else
+        cout<<"not "+s;
+    //G.rDFS();
     return 0;
 }
