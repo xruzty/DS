@@ -1,0 +1,119 @@
+# depslib dependency file v1.0
+1480071563 source:c:\users\navkumak\documents\gg\rusty\main.cpp
+	<iostream>
+	"trees.h"
+	<math.h>
+	<stdlib.h>
+	"treenode.h"
+	"bst.h"
+	"bstnode.h"
+	"listnode.h"
+	"ll.h"
+	<stack>
+	<vector>
+	<unordered_set>
+	<thread>
+	<map>
+	"bstinorderiter.h"
+	"minheap.h"
+	"arrays.h"
+	"avltree.h"
+	<chrono>
+	<graph.h>
+	<list>
+
+1474626387 c:\users\navkumak\documents\gg\rusty\include\treenode.h
+
+1474555191 source:c:\users\navkumak\documents\gg\rusty\src\treenode.cpp
+	"treenode.h"
+
+1477752142 c:\users\navkumak\documents\gg\rusty\include\trees.h
+	"treenode.h"
+	<string>
+	<vector>
+
+1477758599 source:c:\users\navkumak\documents\gg\rusty\src\trees.cpp
+	"trees.h"
+	<iostream>
+	<stack>
+	<queue>
+	<vector>
+	<string>
+	<sstream>
+	<math.h>
+
+1477402600 source:c:\users\navkumak\documents\gg\rusty\src\bst.cpp
+	"bst.h"
+	<vector>
+	<stack>
+	<iostream>
+
+1477401687 c:\users\navkumak\documents\gg\rusty\include\bst.h
+	<vector>
+	"bstnode.h"
+
+1474635863 c:\users\navkumak\documents\gg\rusty\include\bstnode.h
+
+1474635704 source:c:\users\navkumak\documents\gg\rusty\src\bstnode.cpp
+	"bstnode.h"
+
+1475159360 c:\users\navkumak\documents\gg\rusty\include\bstinorderiter.h
+	"bstnode.h"
+	<stack>
+
+1475159055 source:c:\users\navkumak\documents\gg\rusty\src\bstinorderiter.cpp
+	"bstinorderiter.h"
+	"bst.h"
+	<stack>
+
+1475228070 source:c:\users\navkumak\documents\gg\rusty\src\listnode.cpp
+	"listnode.h"
+
+1475228056 c:\users\navkumak\documents\gg\rusty\include\listnode.h
+
+1477061942 source:c:\users\navkumak\documents\gg\rusty\src\ll.cpp
+	"ll.h"
+	<vector>
+	<stack>
+	<iostream>
+	<math.h>
+
+1477061921 c:\users\navkumak\documents\gg\rusty\include\ll.h
+	"listnode.h"
+
+1476270849 source:c:\users\navkumak\documents\gg\rusty\src\minheap.cpp
+	"minheap.h"
+
+1476270376 c:\users\navkumak\documents\gg\rusty\include\minheap.h
+	<vector>
+	"listnode.h"
+
+1476380859 source:c:\users\navkumak\documents\gg\rusty\src\arrays.cpp
+	"arrays.h"
+	"iostream"
+
+1476380404 c:\users\navkumak\documents\gg\rusty\include\arrays.h
+
+1477312080 source:c:\users\navkumak\documents\gg\rusty\src\avltree.cpp
+	"avltree.h"
+	<iostream>
+
+1477311568 c:\users\navkumak\documents\gg\rusty\include\avltree.h
+	"avltreenode.h"
+
+1477311246 c:\users\navkumak\documents\gg\rusty\include\avltreenode.h
+
+1477310340 source:c:\users\navkumak\documents\gg\rusty\src\avltreenode.cpp
+	"avltreenode.h"
+	<iostream>
+
+1480071749 source:c:\users\navkumak\documents\gg\rusty\src\graph.cpp
+	"graph.h"
+
+1480071465 c:\users\navkumak\documents\gg\rusty\include\graph.h
+	<vector>
+	<queue>
+	<iostream>
+	<stack>
+	<set>
+

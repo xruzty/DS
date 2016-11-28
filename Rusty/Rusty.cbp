@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Rusty" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Rusty" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Rusty" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/arrays.h" />
+		<Unit filename="include/avltree.h" />
+		<Unit filename="include/avltreenode.h" />
+		<Unit filename="include/bst.h" />
+		<Unit filename="include/bstinorderiter.h" />
+		<Unit filename="include/bstnode.h" />
+		<Unit filename="include/graph.h" />
+		<Unit filename="include/listnode.h" />
+		<Unit filename="include/ll.h" />
+		<Unit filename="include/minheap.h" />
+		<Unit filename="include/treenode.h" />
+		<Unit filename="include/trees.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/arrays.cpp" />
+		<Unit filename="src/avltree.cpp" />
+		<Unit filename="src/avltreenode.cpp" />
+		<Unit filename="src/bst.cpp" />
+		<Unit filename="src/bstinorderiter.cpp" />
+		<Unit filename="src/bstnode.cpp" />
+		<Unit filename="src/graph.cpp" />
+		<Unit filename="src/listnode.cpp" />
+		<Unit filename="src/ll.cpp" />
+		<Unit filename="src/minheap.cpp" />
+		<Unit filename="src/treenode.cpp" />
+		<Unit filename="src/trees.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
